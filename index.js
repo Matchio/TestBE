@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const app = express();
-const port = 3000;
+const port = 80;
 
 app.use(express.json());
 
