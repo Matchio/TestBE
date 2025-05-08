@@ -87,3 +87,53 @@ app.listen(port, () => {
 app.get('/', (req, res) => {
   res.json('Server running');
 });
+
+app.get('/test', (req, res) => {
+ 
+  res.json({
+    "coord": {
+    "lon": 139.7531,
+    "lat": 35.6854
+    },
+    "weather": [
+    {
+    "id": 802,
+    "main": "Clouds",
+    "description": "เมฆกระจาย",
+    "icon": "03d"
+    }
+    ],
+    "base": "stations",
+    "main": {
+    "temp": 21.06,
+    "feels_like": 20.32,
+    "temp_min": 19.92,
+    "temp_max": 22.08,
+    "pressure": 1021,
+    "humidity": 42,
+    "sea_level": 1021,
+    "grnd_level": 1020
+    },
+    "visibility": 10000,
+    "wind": {
+    "speed": 5.14,
+    "deg": 140
+    },
+    "clouds": {
+    "all": 40
+    },
+    "dt": 1746676235,
+    "sys": {
+    "type": 2,
+    "id": 268105,
+    "country": "JP",
+    "sunrise": 1746646936,
+    "sunset": 1746696764
+    },
+    "timezone": 32400,
+    "id": 1861060,
+    "name": "ญี่ปุ่น",
+    "cod": 200
+    });
+});
+
